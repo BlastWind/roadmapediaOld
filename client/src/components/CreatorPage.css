@@ -1,0 +1,18 @@
+.ui.color1.button {
+  background-color: #f0f0f0;
+  color: #fff;
+}
+
+button.ui.fluid.button.discord {
+  background-color: #6e81cd;
+  color: #fff;
+}
+
+button.ui.fluid.button.discord:hover {
+  background-color: #3553cc;
+}
+
+span.AndrewChenDescription{
+  font-family: "Open Sans", sans-serif !important;
+line-height: 1.625;
+}

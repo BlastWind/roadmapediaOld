@@ -14,10 +14,31 @@
   "author": "Andrew Chen",
   "license": "MIT",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "bootstrap": "^4.3.1",
     "concurrently": "^4.1.0",
+    "d3-hierarchy": "^1.1.8",
+    "d3v4": "^4.2.2",
     "express": "^4.16.4",
-    "mongoose": "^5.4.2"
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.4.0",
+    "jwt-decode": "^2.2.0",
+    "mongoose": "^5.4.2",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-responsive": "^6.1.1",
+    "react-router-dom": "^4.3.1",
+    "react-share": "^2.4.0",
+    "react-tooltip": "^3.9.2",
+    "reactstrap": "^7.1.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.84.0",
+    "uuid": "^3.3.2",
+    "validator": "^10.11.0",
+    "w3-css": "^4.1.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_3" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve" width="512" height="512">
+<g>
+	<g>
+		<polyline style="fill:#429488;" points="17,42 10,42 13,51 18,47   "/>
+	</g>
+	<g>
+		<polyline style="fill:#429488;" points="47,42 54,42 51,51 46,47   "/>
+	</g>
+	<g>
+		<polyline style="fill:#2C665C;" points="23,41 17,42 18,47 23,46   "/>
+	</g>
+	<g>
+		<polyline style="fill:#2C665C;" points="41,41 47,42 46,47 41,46   "/>
+	</g>
+	<g>
+		<path style="fill:#E25341;" d="M41,38v10c0,1.105-0.895,2-2,2H25c-1.105,0-2-0.895-2-2V38"/>
+	</g>
+	<g>
+		<path style="fill:#B63830;" d="M45,38H19c-2.209,0-4-1.791-4-4V16c0-2.209,1.791-4,4-4h26c2.209,0,4,1.791,4,4v18    C49,36.209,47.209,38,45,38z"/>
+	</g>
+	<g>
+		<rect x="25" y="50" style="fill:#B63830;" width="14" height="4"/>
+	</g>
+	<g>
+		<path style="fill:#E25341;" d="M31,12l-1.392-1.741c-1.709-2.136-3.943-3.793-6.483-4.81l0,0C22.445,5.178,22,4.52,22,3.789v0    C22,2.801,22.801,2,23.789,2h0c2.075,0,4.084,0.727,5.678,2.056L33,7l1.14-1.9C35.294,3.177,37.372,2,39.615,2h0    C40.932,2,42,3.068,42,4.385v0c0,0.975-0.594,1.852-1.499,2.215l0,0C38.386,7.445,37,9.493,37,11.77V12"/>
+	</g>
+	<g>
+		<circle style="fill:#FFFFFF;" cx="32" cy="22" r="6"/>
+	</g>
+	<g>
+		<circle style="fill:#39474E;" cx="32" cy="22" r="2"/>
+	</g>
+	<g>
+		<g>
+			<path style="fill:#E25341;" d="M32,35c-3.469,0-6.828-1.017-9.715-2.941l-1.84-1.227l1.109-1.664l1.84,1.227     C25.951,32.099,28.927,33,32,33s6.049-0.901,8.605-2.605l1.84-1.227l1.109,1.664l-1.84,1.227C38.828,33.983,35.469,35,32,35z"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<rect x="26" y="54" style="fill:#2C665C;" width="2" height="8"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<rect x="36" y="54" style="fill:#2C665C;" width="2" height="8"/>
+		</g>
+	</g>
+	<g>
+		<path style="fill:#429488;" d="M24,58L24,58c-2.209,0-4,1.791-4,4v0h8v0C28,59.791,26.209,58,24,58z"/>
+	</g>
+	<g>
+		<path style="fill:#429488;" d="M40,58L40,58c2.209,0,4,1.791,4,4v0h-8v0C36,59.791,37.791,58,40,58z"/>
+	</g>
+</g>
+</svg>

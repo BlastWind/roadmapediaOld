@@ -1,0 +1,967 @@
+@-moz-keyframes fadeInOverlay {
+    0% {
+        background: rgba(255,255,255,0)
+    }
+
+    100% {
+        background: rgba(0,0,0,0.5)
+    }
+}
+
+@-webkit-keyframes fadeInOverlay {
+    0% {
+        background: rgba(255,255,255,0)
+    }
+
+    100% {
+        background: rgba(0,0,0,0.5)
+    }
+}
+
+@-o-keyframes fadeInOverlay {
+    0% {
+        background: rgba(255,255,255,0)
+    }
+
+    100% {
+        background: rgba(0,0,0,0.5)
+    }
+}
+
+@keyframes fadeInOverlay {
+    0% {
+        background: rgba(255,255,255,0)
+    }
+
+    100% {
+        background: rgba(0,0,0,0.5)
+    }
+}
+
+@-moz-keyframes fadeOutOverlay {
+    0% {
+        background: rgba(0,0,0,0.5)
+    }
+
+    100% {
+        background: rgba(255,255,255,0)
+    }
+}
+
+@-webkit-keyframes fadeOutOverlay {
+    0% {
+        background: rgba(0,0,0,0.5)
+    }
+
+    100% {
+        background: rgba(255,255,255,0)
+    }
+}
+
+@-o-keyframes fadeOutOverlay {
+    0% {
+        background: rgba(0,0,0,0.5)
+    }
+
+    100% {
+        background: rgba(255,255,255,0)
+    }
+}
+
+@keyframes fadeOutOverlay {
+    0% {
+        background: rgba(0,0,0,0.5)
+    }
+
+    100% {
+        background: rgba(255,255,255,0)
+    }
+}
+
+.setting h2 {
+    padding: 4px 8px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.2
+}
+
+@media screen and (max-width: 38.75em) {
+    .setting h2 {
+        font-weight:700;
+        font-size: 1.125rem;
+        line-height: 1.111111111111111
+    }
+}
+
+.setting h2 a {
+    padding: 0 3px
+}
+
+.setting h2 .UIIcon {
+    fill: #888;
+    height: 20px;
+    margin-right: 8px;
+    width: 20px
+}
+
+.setting h2 .UIIcon--check {
+    fill: #49b743
+}
+
+.setting h3 {
+    font: 15px/18px hurme_no2-webfont,-apple-system,BlinkMacSystemFont,sans-serif;
+    padding: 4px 8px
+}
+
+.setting h5,.setting h6 {
+    padding: 4px 8px
+}
+
+.setting legend {
+    color: #455358;
+    font: 500 12px/18px hurme_no2-webfont,-apple-system,BlinkMacSystemFont,sans-serif;
+    letter-spacing: 0.5px;
+    padding: 12px 8px 8px 8px
+}
+
+.setting p {
+    color: #455358;
+    padding: 4px 8px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625
+}
+
+@media screen and (max-width: 38.75em) {
+    .setting p {
+        font-weight:400;
+        font-size: 0.875rem;
+        line-height: 1.571428571428571
+    }
+}
+
+.setting p.actions {
+    padding: 0
+}
+
+.setting .button {
+    margin: 8px
+}
+
+.setting .confirmation,.setting .error {
+    border: 1px solid #49b743;
+    border-radius: 4px;
+    color: #388e34;
+    margin: 0 0 16px 0;
+    padding: 8px;
+    text-align: center
+}
+
+.setting .error {
+    border-color: #d5272c;
+    color: #ae2024
+}
+
+.setting p + .error,.setting p + .confirmation {
+    margin-top: 16px
+}
+
+.setting h2 + .error,.setting h2 + .confirmation {
+    margin-top: 8px
+}
+
+.setting label,.setting label.field {
+    display: block;
+    padding: 8px
+}
+
+.setting label strong,.setting label.field strong {
+    display: block;
+    font: 13px/18px hurme_no2-webfont,-apple-system,BlinkMacSystemFont,sans-serif;
+    margin: 4px 0 0 0
+}
+
+.setting label input.text,.setting label.field input.text {
+    border-radius: 3px;
+    display: block;
+    font-size: 14px;
+    margin: 4px 0 0 0;
+    padding: 4px;
+    width: 220px;
+    max-width: 90%
+}
+
+@media screen and (max-width: 56.25em) {
+    .setting label input.text,.setting label.field input.text {
+        margin-right:auto;
+        margin-left: auto
+    }
+}
+
+.setting p + label {
+    border-top: 1px solid #eee;
+    margin-top: 16px;
+    padding-top: 16px
+}
+
+.setting fieldset {
+    border: 0 none
+}
+
+.checkboxes {
+    padding: 4px 0
+}
+
+.checkboxes li {
+    clear: left;
+    display: block
+}
+
+.checkboxes label {
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.checkboxes label strong {
+    margin: 0 0 8px 32px;
+    padding: 0
+}
+
+@media screen and (max-width: 56.25em) {
+    .checkboxes label strong {
+        margin-bottom:0
+    }
+}
+
+.checkboxes label strong a {
+    color: #aaa;
+    font-size: 80%;
+    margin: 0 0 0 8px;
+    white-space: nowrap
+}
+
+.checkboxes label strong a:hover {
+    color: #4257b2
+}
+
+.checkboxes label input {
+    float: left;
+    display: block;
+    margin: 3px 0 0 8px
+}
+
+@media screen and (max-width: 56.25em) {
+    .checkboxes {
+        border-radius:4px;
+        margin: 0 auto;
+        max-width: 360px;
+        padding: 12px 8px;
+        text-align: left
+    }
+}
+
+@-moz-keyframes fadeInOverlay {
+    0% {
+        background: rgba(255,255,255,0)
+    }
+
+    100% {
+        background: rgba(0,0,0,0.5)
+    }
+}
+
+@-webkit-keyframes fadeInOverlay {
+    0% {
+        background: rgba(255,255,255,0)
+    }
+
+    100% {
+        background: rgba(0,0,0,0.5)
+    }
+}
+
+@-o-keyframes fadeInOverlay {
+    0% {
+        background: rgba(255,255,255,0)
+    }
+
+    100% {
+        background: rgba(0,0,0,0.5)
+    }
+}
+
+@keyframes fadeInOverlay {
+    0% {
+        background: rgba(255,255,255,0)
+    }
+
+    100% {
+        background: rgba(0,0,0,0.5)
+    }
+}
+
+@-moz-keyframes fadeOutOverlay {
+    0% {
+        background: rgba(0,0,0,0.5)
+    }
+
+    100% {
+        background: rgba(255,255,255,0)
+    }
+}
+
+@-webkit-keyframes fadeOutOverlay {
+    0% {
+        background: rgba(0,0,0,0.5)
+    }
+
+    100% {
+        background: rgba(255,255,255,0)
+    }
+}
+
+@-o-keyframes fadeOutOverlay {
+    0% {
+        background: rgba(0,0,0,0.5)
+    }
+
+    100% {
+        background: rgba(255,255,255,0)
+    }
+}
+
+@keyframes fadeOutOverlay {
+    0% {
+        background: rgba(0,0,0,0.5)
+    }
+
+    100% {
+        background: rgba(255,255,255,0)
+    }
+}
+
+.SettingsUnsubscribePage .UIListItem {
+    margin-top: 0.625rem !important
+}
+
+.settings-list,.apps-list {
+    padding: 4px 0 0 0
+}
+
+.settings-list .app,.apps-list .app {
+    border-bottom: 1px solid #eee;
+    display: block;
+    overflow: hidden;
+    padding: 8px
+}
+
+.settings-list .app:last-child,.apps-list .app:last-child {
+    border: 0 none
+}
+
+.settings-list .app .app-name,.apps-list .app .app-name {
+    display: block;
+    float: left;
+    width: 40%
+}
+
+.settings-list .app .last-used,.apps-list .app .last-used {
+    display: block;
+    float: left;
+    width: 40%
+}
+
+.settings-list .app .delete,.apps-list .app .delete {
+    background: #f0f0f0;
+    border-radius: 4px;
+    color: #455358;
+    display: block;
+    float: left;
+    margin: 4px 0 0 0;
+    padding: 8px 0;
+    width: 20%;
+    text-align: center
+}
+
+.settings-list .app .delete:hover,.apps-list .app .delete:hover {
+    color: #ae2024
+}
+
+.settings-list .app .delete .icon,.apps-list .app .delete .icon,.settings-list .app .delete .label,.apps-list .app .delete .label {
+    display: inline-block
+}
+
+.settings-list .app .delete .icon,.apps-list .app .delete .icon {
+    font-size: 13px;
+    margin-right: 4px;
+    vertical-align: middle
+}
+
+.settings-list .app .label,.apps-list .app .label {
+    color: #455358;
+    display: block;
+    font: 12px/16px hurme_no2-webfont,-apple-system,BlinkMacSystemFont,sans-serif;
+    -webkit-font-smoothing: antialiased
+}
+
+.settings-list .app .expired,.apps-list .app .expired {
+    color: #ae2024
+}
+
+.settings-list .app .data,.apps-list .app .data {
+    color: #455358;
+    font: 14px/21px hurme_no2-webfont,-apple-system,BlinkMacSystemFont,sans-serif
+}
+
+.notifications.setting .email.prompt {
+    -webkit-font-smoothing: antialiased;
+    background: #fffabc;
+    border-radius: 3px;
+    box-shadow: none;
+    *zoom:1;margin: 10px 0 0;
+    padding: 10px;
+    position: relative;
+    text-align: center
+}
+
+.notifications.setting .email.prompt:before,.notifications.setting .email.prompt:after {
+    content: '';
+    display: table
+}
+
+.notifications.setting .email.prompt:after {
+    clear: both
+}
+
+.notifications.setting .email.prompt h3 {
+    border: 0;
+    color: #555;
+    font: 16px/1.2 hurme_no2-webfont,-apple-system,BlinkMacSystemFont,sans-serif;
+    padding: 0;
+    margin: 0 0 8px
+}
+
+.notifications.setting .email.prompt p {
+    color: #555;
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0;
+    padding: 0
+}
+
+.notifications.setting .email.prompt p a {
+    border: 0 none;
+    color: #555;
+    text-decoration: underline
+}
+
+.TimeZoneSetting-select {
+    margin-left: 0.5rem;
+    max-width: 25rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .TimeZoneSetting-select {
+        max-width:100%
+    }
+}
+
+.TimeZoneSetting-autoDetect {
+    display: none
+}
+
+.TimeZoneSetting.has-differingAutoDetectedTimeZone .TimeZoneSetting-autoDetect {
+    display: block
+}
+
+.TimeZoneSetting-autoDetect a:hover {
+    text-decoration: underline
+}
+
+.add-image {
+    *zoom:1;margin: -8px 0 -2px 0;
+    padding: 8px 0 0 0
+}
+
+.add-image:before,.add-image:after {
+    content: '';
+    display: table
+}
+
+.add-image:after {
+    clear: both
+}
+
+.add-image .more-animals {
+    margin-top: 10px
+}
+
+.add-image .more-animals a {
+    display: block;
+    margin-bottom: 8px
+}
+
+.add-image #animalGallery {
+    *zoom:1;margin: 10px -4px 0 0;
+    padding: 0;
+    -webkit-user-select: none
+}
+
+.add-image #animalGallery:before,.add-image #animalGallery:after {
+    content: '';
+    display: table
+}
+
+.add-image #animalGallery:after {
+    clear: both
+}
+
+.add-image #animalGallery h5 {
+    border-top: 0 none;
+    color: #444;
+    padding-top: 0
+}
+
+.add-image #animalGallery .animal {
+    background: #fff;
+    border: 0 none;
+    border-radius: 26px;
+    float: left;
+    margin: 2px;
+    outline: 0 none;
+    padding: 2px;
+    position: relative;
+    transition: background 200ms linear 10ms;
+    transition-timing-function: cubic-bezier(0.46,0.655,0.495,1.65);
+    -webkit-transform-style: preserve-3d;
+    filter: none;
+    -webkit-filter: blur(0)
+}
+
+.ie .add-image #animalGallery .animal {
+    box-shadow: none;
+    margin: 0;
+    transition: none !important
+}
+
+.add-image #animalGallery .animal:hover {
+    background: #ddd;
+    z-index: 2
+}
+
+.add-image #animalGallery .animal.selected {
+    background: #4257b2;
+    z-index: 3
+}
+
+.add-image #animalGallery .animal img {
+    border-radius: 26px;
+    display: block;
+    outline: 0 none;
+    height: 46px;
+    width: 46px
+}
+
+.ie .add-image #animalGallery .animal img {
+    height: 32px;
+    width: 32px
+}
+
+.profile-photo-upload {
+    position: relative
+}
+
+.profile-photo-upload .the-label {
+    border-radius: 4px;
+    display: block;
+    padding: 12px 8px;
+    text-align: center
+}
+
+.profile-photo-upload .the-label .button {
+    display: inline-block;
+    margin: 0 8px;
+    -webkit-transform: translateZ(0)
+}
+
+.loading.profile-photo-upload .the-label {
+    display: none
+}
+
+.profile-photo-upload .loading-text {
+    background: #388e34;
+    border-radius: 4px;
+    color: #fff;
+    display: none;
+    line-height: 26px;
+    padding: 12px 8px;
+    text-align: center
+}
+
+.loading.profile-photo-upload .loading-text {
+    display: block
+}
+
+.profile-photo-upload .file {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.ManageSubscriptionCancelAutoRenewalConfirmModal-message {
+    margin-bottom: 0.75rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625
+}
+
+@media screen and (max-width: 38.75em) {
+    .ManageSubscriptionCancelAutoRenewalConfirmModal-message {
+        font-weight:400;
+        font-size: 0.875rem;
+        line-height: 1.571428571428571
+    }
+}
+
+.ManageSubscriptionCancelAutoRenewalConfirmModal-cancellationInfo {
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625
+}
+
+@media screen and (max-width: 38.75em) {
+    .ManageSubscriptionCancelAutoRenewalConfirmModal-cancellationInfo {
+        font-weight:400;
+        font-size: 0.875rem;
+        line-height: 1.571428571428571
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .ManageSubscriptionCancelAutoRenewalConfirmModal-cancellationInfo {
+        margin-bottom:1.5rem
+    }
+}
+
+.ManageSubscriptionCancelAutoRenewalConfirmModal-secondaryButton {
+    text-align: center
+}
+
+.ManageSubscriptionDetailsModal-heading {
+    color: #97a5aa;
+    margin-bottom: 1.25rem
+}
+
+.ManageSubscriptionDetailsModal-benefitsItems {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.ManageSubscriptionDetailsModal-benefitItem {
+    color: #455358;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 2rem;
+    width: calc(99.99% * 1/2 - (32px - 32px * 1/2));
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625;
+    font-weight: 600
+}
+
+.ManageSubscriptionDetailsModal-benefitItem:nth-child(n) {
+    margin-right: 32px;
+    float: left;
+    clear: none
+}
+
+.ManageSubscriptionDetailsModal-benefitItem:last-child {
+    margin-right: 0
+}
+
+.ManageSubscriptionDetailsModal-benefitItem:nth-child(2n) {
+    margin-right: 0;
+    float: right
+}
+
+.ManageSubscriptionDetailsModal-benefitItem:nth-child(2n + 1) {
+    clear: left
+}
+
+@media screen and (max-width: 38.75em) {
+    .ManageSubscriptionDetailsModal-benefitItem {
+        font-weight:400;
+        font-size: 0.875rem;
+        line-height: 1.571428571428571
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .ManageSubscriptionDetailsModal-benefitItem {
+        margin-bottom:1.25rem;
+        width: calc(99.99% * 1/1 - (32px - 32px * 1/1));
+        font-weight: 600
+    }
+
+    .ManageSubscriptionDetailsModal-benefitItem:nth-child(n) {
+        margin-right: 32px;
+        float: left;
+        clear: none
+    }
+
+    .ManageSubscriptionDetailsModal-benefitItem:last-child {
+        margin-right: 0
+    }
+
+    .ManageSubscriptionDetailsModal-benefitItem:nth-child(1n) {
+        margin-right: 0;
+        float: right
+    }
+
+    .ManageSubscriptionDetailsModal-benefitItem:nth-child(1n + 1) {
+        clear: left
+    }
+
+    .ManageSubscriptionDetailsModal-benefitItem:last-child {
+        margin-bottom: 2rem
+    }
+}
+
+.ManageSubscriptionDetailsModal-benefitItem .UIIcon {
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    color: #4257b2;
+    fill: #4257b2;
+    height: 1.625rem;
+    width: 1.625rem
+}
+
+.ManageSubscriptionDetailsModal-disclaimerSection,.ManageSubscriptionDetailsModal-renewalInformationSection {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.285714285714286
+}
+
+@media screen and (max-width: 38.75em) {
+    .ManageSubscriptionDetailsModal-disclaimerSection,.ManageSubscriptionDetailsModal-renewalInformationSection {
+        font-weight:400;
+        font-size: 0.75rem;
+        line-height: 1.333333333333333
+    }
+}
+
+.ManageSubscriptionDetailsModal-disclaimerSection .UILink,.ManageSubscriptionDetailsModal-renewalInformationSection .UILink {
+    font-weight: 600
+}
+
+@media screen and (max-width: 38.75em) {
+    .ManageSubscriptionDetailsModal-disclaimerSection .UILink,.ManageSubscriptionDetailsModal-renewalInformationSection .UILink {
+        font-weight:600
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .ManageSubscriptionDetailsModal-renewalDate {
+        margin-bottom:0.3125rem
+    }
+}
+
+.ManageSubscriptionDetailsModal-disclaimerSection {
+    margin-top: 2rem
+}
+
+.ManageSubscriptionDetailsModal-disclaimerSection .ManageSubscriptionDetailsModal-heading {
+    margin-top: 2rem
+}
+
+.ManageSubscriptionDetailsModal-updateBillingInfoLink {
+    display: block;
+    margin-top: 0.5rem
+}
+
+.ManageSubscriptionDetailsModal-terminateSubscriptionLink {
+    display: block;
+    margin-top: 0.125rem
+}
+
+.ManageSubscriptionSuccessModal-confirmationMessage {
+    margin-bottom: 0.75rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625
+}
+
+@media screen and (max-width: 38.75em) {
+    .ManageSubscriptionSuccessModal-confirmationMessage {
+        font-weight:400;
+        font-size: 0.875rem;
+        line-height: 1.571428571428571
+    }
+}
+
+.ManageSubscriptionSuccessModal-detailsMessage {
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625
+}
+
+@media screen and (max-width: 38.75em) {
+    .ManageSubscriptionSuccessModal-detailsMessage {
+        font-weight:400;
+        font-size: 0.875rem;
+        line-height: 1.571428571428571
+    }
+}
+
+@media screen and (max-width: 38.75em) {
+    .ManageSubscriptionSuccessModal-detailsMessage {
+        margin-bottom:1.5rem
+    }
+}
+
+.SettingsBox {
+    clear: both;
+    margin: 1.5rem 0.75rem 0 0;
+    max-width: 56.25rem;
+    padding: 0.5rem 0
+}
+
+@media screen and (max-width: 56.25em) {
+    .SettingsBox {
+        margin:0.75rem 0 0 0
+    }
+}
+
+.SettingsBox-title {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    float: left;
+    padding: 0 1.5rem;
+    text-align: center;
+    width: 25%
+}
+
+@media screen and (min-width: 64.0625em) {
+    .SettingsBox-title {
+        width:15.625rem
+    }
+}
+
+@media screen and (max-width: 56.25em) {
+    .SettingsBox-title {
+        -webkit-flex-direction:row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        float: none;
+        margin-bottom: 0.75rem;
+        padding: 1rem 0.75rem 0 0.75rem;
+        text-align: center;
+        width: auto
+    }
+}
+
+.SettingsBox-illustration {
+    margin: 0.625rem auto 0.5rem auto
+}
+
+@media screen and (max-width: 56.25em) {
+    .SettingsBox-illustration {
+        margin:0 0.3125rem 0 0
+    }
+}
+
+.SettingsBox-illustration .UIIcon {
+    color: #455358;
+    height: 50px;
+    width: 50px
+}
+
+@media screen and (max-width: 56.25em) {
+    .SettingsBox-illustration .UIIcon {
+        margin:0 0.3125rem 0 0;
+        height: 28px;
+        width: 28px
+    }
+}
+
+@media screen and (max-width: 56.25em) {
+    .SettingsBox-heading {
+        margin:0 0 0 0.3125rem
+    }
+}
+
+.SettingsBox-box {
+    background-color: #fff;
+    clear: none;
+    margin: 0 1rem 0 25%;
+    min-height: 6.25rem;
+    overflow: hidden;
+    padding: 1rem
+}
+
+@media screen and (min-width: 64.0625em) {
+    .SettingsBox-box {
+        margin-left:15.625rem
+    }
+}
+
+@media screen and (max-width: 56.25em) {
+    .SettingsBox-box {
+        margin-left:1rem;
+        min-height: 0
+    }
+}
+
+.SettingsLocalePreference-select {
+    max-width: 15.625rem
+}
+
+@media screen and (max-width: 38.75em) {
+    .SettingsLocalePreference-select {
+        max-width:100%
+    }
+}
+
+.SettingsPrivacyOptionsBox .SettingsPrivacyOptionsBox-deindexInfo {
+    display: none
+}
+
+.SettingsPrivacyOptionsBox .SettingsPrivacyOptionsBox-deindexInfo.is-visible {
+    display: block
+}
+
+.SettingsUnlinkeFacebookBox-friend {
+    display: inline-block
+}
+
+.SettingsUnlinkeFacebookBox-friend + [class^=UI],[class^=UI] + .SettingsUnlinkeFacebookBox-friend,.SettingsUnlinkeFacebookBox-friend + .SettingsUnlinkeFacebookBox-friend {
+    margin-top: 0.5rem
+}
+
+.SettingsUnlinkeFacebookBox-friend:not(:last-child) {
+    margin-right: 0.5rem
+}
+
+.SettingsUnsubscribePage .UIListItem {
+    margin-top: 0.625rem !important
+}

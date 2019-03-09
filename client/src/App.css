@@ -1,21 +1,56 @@
-.remove-btn{
-  margin-right: 0.5rem;
-
+.node {
+  cursor: pointer;
 }
 
-.fade-enter{
-  opacity:0.01;
+.node circle {
+  stroke-width: 0.3px;
 }
 
-.fade-enter-active{
-  opacity:1;
-  transition: opacity 1000ms ease-in;
+.node circle.extra_info {
+}
+@keyframes glow {
+  to {
+    text-shadow: 0 0 10px red;
+  }
+}
 
+.node text {
+  font: 12px sans-serif;
 }
-.fade-exit{
-  opacity: 1;
+
+.link {
+  fill: none;
+  stroke: coral;
+  stroke-width: 2px;
 }
-.fade-exit-active{
-  opacity: 0.01;
-  transition: opacity 1000ms ease-in;
+.templink {
+  fill: none;
+  stroke: red;
+  stroke-width: 3px;
+}
+
+.ghostCircle.show {
+  display: block;
+}
+
+.ghostCircle,
+.activeDrag .ghostCircle {
+  display: none;
+}
+
+text.textToolTip {
+  line-height: 1;
+  padding: 6px;
+
+  fill: white !important;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+g.toolTipG {
+  background-color: white;
+}
+
+svg.social-icon.social-icon:hover {
+  cursor: pointer;
 }

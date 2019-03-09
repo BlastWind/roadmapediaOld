@@ -1,0 +1,8 @@
+.LinkClass {
+  font-size: 30px;
+  font-family: Baskerville;
+}
+
+div#HomeRoadmapList.w3-col.m7 {
+    overflow: hidden;
+}

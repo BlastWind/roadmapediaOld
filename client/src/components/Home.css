@@ -1,0 +1,181 @@
+.Container1 {
+  background-color: white;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  box-shadow: 10px 10px 10px lightgray;
+  overflow: hidden;
+}
+
+.Container3 {
+  background-color: white;
+  float: left;
+  clear: both;
+  text-align: center;
+  font-size: 20px;
+
+  box-shadow: 10px 10px 10px lightgray;
+  overflow: hidden;
+}
+#firstName {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.GimmePadding {
+}
+
+.imgClass {
+  width: 40%;
+  height: 40%;
+  align: middle;
+  padding-top: 10px;
+  padding-bottom: 22px;
+}
+.imgClass2 {
+  width: 40%;
+  height: 40%;
+  align: middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+a.author {
+  font-size: 1rem;
+  color: #3ccfcf;
+  margin-left: 0.25rem;
+  border-right-style: solid;
+  border-right-color: coral;
+  padding-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+span.time_completion {
+  font-size: 5px;
+  font-size: 0.875rem;
+  color: #455358;
+  font-family: hurme_no2-webfont, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.625rem;
+  font-weight: 550;
+  position: relative;
+  margin-left: 0.5rem;
+  border-right-style: solid;
+  border-right-color: coral;
+  padding-right: 0.5rem;
+}
+span.views {
+  font-size: 5px;
+  font-size: 0.875rem;
+  color: #455358;
+  font-family: hurme_no2-webfont, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.625rem;
+  font-weight: 550;
+  position: relative;
+
+  margin-left: 0.5rem;
+}
+div.content {
+}
+img.ui.avatar.image.RoadmapAuthorImage {
+  margin-left: 0.5rem;
+}
+
+div.w3-col.m3 {
+  position: relative;
+  top: 12rem;
+}
+
+div.w3-col.m3#Browse {
+  position: relative;
+  left: 5%;
+}
+
+div.w3-col.m7#HomeRoadmapList {
+  position: relative;
+
+  margin-top: 18rem;
+  background-color: white;
+  box-shadow: 2px 2px 10px lightgray;
+  width: 55%;
+}
+
+div.HomeDashBoard {
+  width: 70%;
+
+  margin-left: 40%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 38.75em) {
+  div.item.Roadmap {
+    height: 15rem;
+  }
+  a.title {
+    font-size: 22px;
+    font-weight: 600 !important;
+    color: #455358 !important;
+    line-height: 1.25;
+  }
+  p.debrief {
+    font-size: 15px;
+  font-family: "Open Sans", sans-serif !important;
+    margin-top: 0.25rem;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 81.25em) {
+  #RoadmapsOfTheDay {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  #RoadmapsOfTheDay {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 38.75em) {
+  #RoadmapsOfTheDay {
+    padding-top: 10px;
+  }
+  div.item.Roadmap {
+    height: 18rem;
+  }
+  a.title {
+    font-size: 20px;
+    font-weight: 600 !important;
+    color: #455358 !important;
+    line-height: 1.25;
+  }
+  span.debrief {
+    font-size: 12.5px;
+
+    font-family: "Open Sans", sans-serif !important;
+
+    margin-top: 0.25rem;
+    overflow: hidden;
+  }
+  img.HomepageImg {
+    align: middle;
+  }
+}
+
+div.RoadmapDescriptionRight {
+  padding-top: 1rem;
+}
+div.RoadmapDescriptionLeft {
+  margin-top: 0.5rem;
+}
+
+div.flexbox-container {
+  display: flex;
+}
+div.flexbox-container > div {
+  flex: 1;
+}
+
+@media screen and (min-width: 1172px) {
+}
+
+@media screen and (max-width: 600px) {
+}

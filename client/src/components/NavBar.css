@@ -1,0 +1,61 @@
+.hi2 {
+  color: white;
+}
+
+.a.color-dark:hover {
+  background-color: red;
+}
+
+#yeets {
+  margin-bottom: 0;
+}
+
+li#SearchLeft {
+}
+
+li#SearchRight {
+  margin-left: 5rem;
+}
+
+i.arrow.right.icon {
+  cursor: pointer;
+}
+
+div#NavBarBox {
+  margin-top: 16px;
+}
+
+form.ui.form.NavBarForm {
+}
+
+input.NavBarInput {
+  margin-left: 1rem;
+}
+
+a.NavBarText {
+  cursor: pointer;
+}
+div.item.NavBarSearchBar {
+  padding-left: 0rem !important;
+  padding-right: 4rem !important;
+}
+i.link.delete.icon::before {
+  margin-left: 1rem;
+}
+
+i.arrow.right.icon::before {
+  margin-left: 1rem;
+}
+
+div.right.item {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+div.item {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+input.prompt {
+  margin-bottom: 1rem !important;
+}

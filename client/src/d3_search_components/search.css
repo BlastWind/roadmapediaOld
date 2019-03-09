@@ -1,0 +1,21 @@
+div.searchResultDiv {
+  width: 80%;
+  position: relative;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+span.searchResultDivText {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: #455358;
+  font-family: hurme_no2-webfont, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+span.searchResultDivBrowseText {
+  color: #455358;
+  font-family: hurme_no2-webfont, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 100%;
+  line-height: 1.625;
+}

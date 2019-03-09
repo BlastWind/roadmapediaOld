@@ -1,4 +1,5 @@
-export const GET_ITEMS = 'GET_ITEMS';
-export const ADD_ITEM = 'ADD_ITEM';
-export const DELETE_ITEM = 'DELETE_ITEM';
-export const ITEMS_LOADING = 'ITEMS_LOADING'
+export const GET_ROADMAPS = "GET_ROADMAPS";
+export const ADD_ROADMAP = "ADD_ROADMAPS";
+export const DELETE_ROADMAP = "DELETE_ROADMAP";
+export const ROADMAPS_LOADING = "ROADMAPS_LOADING";
+export const GET_ROADMAP_BY_ID = "GET_ROADMAP_BY_ID";
