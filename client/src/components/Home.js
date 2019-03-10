@@ -4,13 +4,13 @@ import save from "../images/user_interface/svg/061-save-button.svg";
 import React, { Component } from "react";
 import MediaQuery from "react-responsive";
 import "./Home.css";
-import { Container, List, Image } from "semantic-ui-react";
+
 import { connect } from "react-redux";
 import { getRoadmaps } from "../actions/roadmapAction";
 import HomeRoadmapList from "./HomeRoadmapList.js";
-import jwt_decode from "jwt-decode";
+
 import { loginUser } from "../actions/authActions";
-import Landing from "./Landing.js";
+
 import VertNavBar from "./VertNavBar.js";
 import axios from "axios";
 class Home extends Component {
@@ -22,7 +22,7 @@ class Home extends Component {
     await axios.get("api/roadmaps/getRandomRoadmaps").then(res => {
       this.setState({ HomeRoadmapListDisplayData: res.data, loading: false });
     });
-}
+  }
 
   travelToAdd = () => {
     this.props.history.push("/add");
@@ -43,9 +43,6 @@ class Home extends Component {
     this.props.history.push("/account/edit");
   };
   render() {
-    const styles = {
-      marginLeft: "20px"
-    };
     return (
       <React.Fragment>
         <div class="DashboardLayout-container">
@@ -91,6 +88,7 @@ class Home extends Component {
                               class="HomepageImg"
                               src={Search}
                               onClick={this.travelToSearch}
+                              alt="Img should go here"
                             />
                           </div>
                           <div
@@ -103,7 +101,7 @@ class Home extends Component {
                             <img
                               onClick={this.travelToAdd}
                               src={Add}
-                              style={{}}
+                              alt="Img should go here"
                             />
                           </div>
                           <div
@@ -116,7 +114,7 @@ class Home extends Component {
                             <img
                               onClick={this.travelToSavedRoadmaps}
                               src={save}
-                              style={{}}
+                              alt="Img should go here"
                             />
                           </div>
                         </div>
@@ -125,7 +123,6 @@ class Home extends Component {
                         <div
                           class="ImgContainer"
                           style={{
-                            marginBottom: "1rem",
                             height: "200px",
                             marginTop: "2rem",
                             marginLeft: "3rem",
@@ -135,7 +132,7 @@ class Home extends Component {
                           <div
                             style={{
                               float: "left",
-                              width: "200px",
+
                               width: "20%"
                             }}
                           >
@@ -144,6 +141,7 @@ class Home extends Component {
                               src={Search}
                               onClick={this.travelToSearch}
                               style={{ width: "100%" }}
+                              alt="Img should go here"
                             />
                           </div>
                           <div
@@ -157,6 +155,7 @@ class Home extends Component {
                               onClick={this.travelToAdd}
                               src={Add}
                               style={{ width: "100%" }}
+                              alt="Img should go here"
                             />
                           </div>
                           <div
@@ -170,6 +169,7 @@ class Home extends Component {
                               onClick={this.travelToSavedRoadmaps}
                               src={save}
                               style={{ width: "100%" }}
+                              alt="Img should go here"
                             />
                           </div>
                         </div>
@@ -188,6 +188,7 @@ class Home extends Component {
                               src={Search}
                               onClick={this.travelToSearch}
                               style={{ width: "100%" }}
+                              alt="Img should go here"
                             />
                           </div>
                           <div
@@ -201,6 +202,7 @@ class Home extends Component {
                               onClick={this.travelToAdd}
                               src={Add}
                               style={{ width: "100%" }}
+                              alt="Img should go here"
                             />
                           </div>
                           <div
@@ -214,6 +216,7 @@ class Home extends Component {
                               onClick={this.travelToSavedRoadmaps}
                               src={save}
                               style={{ width: "100%" }}
+                              alt="Img should go here"
                             />
                           </div>
                         </div>

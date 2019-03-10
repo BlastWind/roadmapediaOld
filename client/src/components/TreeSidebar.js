@@ -10,7 +10,7 @@ class TreeSidebar extends Component {
       var hmm = "https://" + this.props.displayResourceLink;
       window.open(hmm, "_blank");
     } else {
-      var hmm = "https://www." + this.props.displayResourceLink;
+      var hmm2 = "https://www." + this.props.displayResourceLink;
       window.open(hmm, "_blank");
     }
   };

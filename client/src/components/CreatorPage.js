@@ -75,7 +75,7 @@ class CreatorPage extends Component {
                       >
                         If you want to hit me up for any reason, join the
                         discord community or email me at
-                        andrewchen14250@gmail.com!
+                        andrew.chen@roadmapedia.com!
                       </span>
                     </div>
                     <div
@@ -97,7 +97,7 @@ class CreatorPage extends Component {
                         color="youtube"
                         fluid
                         style={{ marginTop: "1rem" }}
-                        href="https://discord.gg/WD82qNM"
+                        href="https://www.youtube.com/channel/UCdGYHVptzujcjK67pOnrcGQ?view_as=subscriber"
                         target="_blank"
                       >
                         <Icon name="youtube" />
@@ -149,8 +149,8 @@ class CreatorPage extends Component {
                 make your account your password is automatically hashed with JWT
                 token and even I who has the access to the database don't know
                 your password. You can however email me at
-                andrewchen14250@gmail.com with the email you used to register. I
-                can make a new account with all of the information you had in
+                andrew.chen@roadmapedia.com with the email you used to register.
+                I can make a new account with all of the information you had in
                 your previous account.
               </div>
             </div>
