@@ -73,7 +73,6 @@ class NavBar extends Component {
     } else {
       item = <Dropdown.Item href="/login">Please Log In</Dropdown.Item>;
     }
-
     return (
       <React.Fragment>
         <MediaQuery minWidth={590}>
@@ -164,7 +163,10 @@ class NavBar extends Component {
               {isAuthenticated ? (
                 <Dropdown
                   item
-                  text=<img src={this.props.auth.user_profile_pic} />
+                  text=<img
+                    src={this.props.auth.user_profile_pic}
+                    alt="edit this"
+                  />
                   direction="left"
                   style={{ color: "#FFFFFF" }}
                 >
