@@ -149,7 +149,9 @@ class Tree extends Component {
             return gToolTip.style("visibility", "visible");
           }
         })
-
+        .on("mouseover", function(d) {
+          return gToolTip.style("visibility", "visible");
+        })
         .on("mouseout", function(d) {
           return gToolTip.style("visibility", "hidden");
         })
