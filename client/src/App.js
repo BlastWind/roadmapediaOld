@@ -21,7 +21,7 @@ import {
   BrowserRouter as Router,
   Route,
   Link,
-  Redirect
+  Redirect, Switch
 } from "react-router-dom";
 import { Menu, Icon, Dropdown } from "semantic-ui-react";
 import Home from "./components/Home";
@@ -30,42 +30,33 @@ import Login from "./auth_components/Login";
 import Register from "./auth_components/Register";
 import Profile from "./components/Profile";
 import CreatorPage from "./components/CreatorPage";
-import { getCurrentUser, logoutUser, loginUser } from "./actions/authActions";
+import {
+  getCurrentUser,
+  logoutUser,
+  loginUser,
+  setCurrentUser
+} from "./actions/authActions";
+import setAuthToken from "./utils/setAuthToken";
+import jwt_decode from "jwt-decode";
+import PrivateRoute from "./components/private-route/PrivateRoute"
 
-const PrivateRoute = ({ component: Component, authed, ...rest }) => (
-  <Route
-    {...rest}
-    render={props =>
-      authed === true ? (
-        <Component {...props} />
-      ) : (
-        <Redirect
-          to={{
-            pathname: "/login",
-            state: { from: props.location }
-          }}
-        />
-      )
-    }
-  />
-);
+console.log(localStorage);
+
+if (localStorage.jwtToken) {
+  var current_user = localStorage.getItem("jwtToken");
+  var email = localStorage.getItem("email");
+  var password = localStorage.getItem("password");
+  var userData = { email: email, password: password };
+
+  console.log(jwt_decode(current_user));
+
+  //set auth token header auth
+  const token = localStorage.jwtToken;
+  setAuthToken(token);
+  store.dispatch(loginUser(userData));
+}
 
 class App extends Component {
-  state = { loggedIn: false };
-  async componentDidMount() {
-    var current_user = localStorage.getItem("jwtToken");
-    var email = localStorage.getItem("email");
-    var password = localStorage.getItem("password");
-
-    var userData = { email: email, password: password };
-    await this.props.loginUser(userData);
-    if (email !== null || email !== undefined || email !== "") {
-      this.setState({ loggedIn: true });
-    } else {
-      this.setState({ loggedIn: false });
-    }
-  }
-
   render() {
     return (
       <Router>
@@ -76,26 +67,21 @@ class App extends Component {
           <Route path="/roadmap" component={OneRoadmap} />
           <Route exact path="/aboutme" component={CreatorPage} />
           <Route path="/search" component={Search} />
-          <PrivateRoute
-            authed={this.state.loggedIn}
-            exact
-            path="/add"
-            component={RoadmapAdder}
-          />
+          <Switch>
+            <PrivateRoute exact path="/add" component={RoadmapAdder} />
+          </Switch>
           <Route exact path="/register" component={Register} />
-          <Route exact path="/login" component={Login} />{" "}
-          <PrivateRoute
-            authed={this.state.loggedIn}
-            exact
-            path="/account"
-            component={Profile}
-          />
-          <PrivateRoute
-            authed={this.state.loggedIn}
-            exact
-            path="/savedRoadmaps"
-            component={SavedRoadmapsView}
-          />
+          <Route exact path="/login" component={Login} />
+          <Switch>
+            <PrivateRoute exact path="/account" component={Profile} />
+          </Switch>
+          <Switch>
+            <PrivateRoute
+              exact
+              path="/savedRoadmaps"
+              component={SavedRoadmapsView}
+            />
+          </Switch>
           <Route path="/profile" component={AuthorProfile} />
         </div>
       </Router>

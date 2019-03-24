@@ -41,8 +41,8 @@ class VertNavBar extends Component {
             <div class="SiteNav-section">
               <div class="SiteNav-menuItem SiteNav-menuItem">
                 <span class="UIMenuItem">
-                  <a class="UILink" onClick={this.travelToHome}>
-                    <span class="UIMenuItem-inner">
+                  <a class="UILink">
+                    <span class="UIMenuItem-inner" onClick={this.travelToHome}>
                       <img
                         src={house}
                         style={{ height: "20px", marginRight: "10px" }}
@@ -54,8 +54,11 @@ class VertNavBar extends Component {
               </div>
               <div class="SiteNav-menuItem">
                 <span class="UIMenuItem">
-                  <a class="UILink" onClick={this.travelToSavedRoadmaps}>
-                    <span class="UIMenuItem-inner">
+                  <a class="UILink">
+                    <span
+                      class="UIMenuItem-inner"
+                      onClick={this.travelToSavedRoadmaps}
+                    >
                       <img
                         src={save}
                         style={{ height: "20px", marginRight: "10px" }}
@@ -70,17 +73,15 @@ class VertNavBar extends Component {
               <div class="SiteNav-menuItem">
                 <span class="UIMenuItem">
                   <a class="UILink">
-                    <span class="UIMenuItem-inner">
+                    <span
+                      class="UIMenuItem-inner"
+                      onClick={this.travelToCreator}
+                    >
                       <img
                         src={heart}
                         style={{ height: "20px", marginRight: "10px" }}
                       />
-                      <div
-                        class="SiteNav-menuItemTitle"
-                        onClick={this.travelToCreator}
-                      >
-                        About the creator
-                      </div>
+                      <div class="SiteNav-menuItemTitle">About the creator</div>
                     </span>
                   </a>
                 </span>
@@ -88,17 +89,15 @@ class VertNavBar extends Component {
               <div class="SiteNav-menuItem">
                 <span class="UIMenuItem">
                   <a class="UILink">
-                    <span class="UIMenuItem-inner">
+                    <span
+                      class="UIMenuItem-inner"
+                      onClick={this.travelToProfile}
+                    >
                       <img
                         src={profile}
                         style={{ height: "20px", marginRight: "10px" }}
                       />
-                      <div
-                        class="SiteNav-menuItemTitle"
-                        onClick={this.travelToProfile}
-                      >
-                        Profile
-                      </div>
+                      <div class="SiteNav-menuItemTitle">Profile</div>
                     </span>
                   </a>
                 </span>

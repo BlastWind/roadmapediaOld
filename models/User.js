@@ -20,7 +20,7 @@ const UserSchema = new Schema({
   },
   profile_picture: {
     type: String,
-    default: "/static/media/user.7a21cbe9.svg"
+    default: "/static/media/user.9a3a77b0.svg"
   },
   bio: {
     type: String,

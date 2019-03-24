@@ -38,7 +38,7 @@ class NavBar extends Component {
     this.props.history.push("/account");
   };
   travelToHome = () => {
-    this.props.history.push("/");
+    this.props.history.push("/home");
   };
   travelToSearch = () => {
     this.setState({ typing_search: !this.state.typing_search });

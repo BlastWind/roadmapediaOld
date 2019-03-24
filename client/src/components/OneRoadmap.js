@@ -166,7 +166,7 @@ class OneRoadmap extends Component {
                 onClick={this.saveRoadmapToUser2}
                 style={{ marginTop: "1rem" }}
               >
-                <a className="buttonText">Save this Roadmap!</a>
+                <a className="buttonText" style={{color: "white"}}>Save this Roadmap!</a>
               </Button>
               <ReactTooltip id="bio">
                 <a>
@@ -182,7 +182,7 @@ class OneRoadmap extends Component {
                 className="RoadmapButton"
                 style={{ marginTop: "1rem" }}
               >
-                <a className="buttonText">About the author</a>
+                <a className="buttonText" style={{color: "white"}}>About the author</a>
               </Button>
               <div
                 className="socialMediaButton"

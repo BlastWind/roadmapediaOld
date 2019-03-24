@@ -45,13 +45,13 @@ class AuthorProfile extends Component {
             </span>
             <div>
               <span className="searchResultDivBrowseText">
-        
+
                 Browsing {this.state.displayData.displayRoadmaps.length}{" "}
                 roadmaps
               </span>
             </div>
             <ReactTooltip id="bio">
-              <a>
+              <a style={{color: "white"}}>
                 {this.state.bio === ""
                   ? "hmm, our friend didn't have a bio"
                   : this.state.bio}
