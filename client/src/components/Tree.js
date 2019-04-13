@@ -135,6 +135,7 @@ class Tree extends Component {
           return d.data.website_image;
         })
         .attr("height", diameter * 2)
+        .attr("width", diameter * 2)
         .attr("transform", "translate(-30," + -diameter + ")");
 
       nodeEnter
