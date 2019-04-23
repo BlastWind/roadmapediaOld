@@ -11,6 +11,10 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
+  "engine": {
+    "node": "10.15.0",
+    "npm": "6.4.1"
+  },
   "author": "Andrew Chen",
   "license": "MIT",
   "dependencies": {
