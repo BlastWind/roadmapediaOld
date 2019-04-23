@@ -24,6 +24,10 @@ const fs = require("fs");
 // @desc Register user
 // @access Publi
 
+router.get("/getuserscount", (req, res) => {
+  User.count().then(count => res.json(count));
+});
+
 router.post("/register", (req, res) => {
   // Form validation
   const { errors, isValid } = validateRegisterInput(req.body);

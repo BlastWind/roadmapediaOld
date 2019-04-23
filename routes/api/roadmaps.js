@@ -5,6 +5,23 @@ const router = express.Router();
 const Roadmap = require("../../models/Roadmap");
 const User = require("../../models/User");
 
+router.get("/getroadmapcount", (req, res) => {
+  Roadmap.count().then(count => res.json(count));
+});
+
+router.get("/getroadmapviewscount", (req, res) => {
+  Roadmap.aggregate([
+    {
+      $group: {
+        _id: null,
+        totalCount: { $sum: "$views" }
+      }
+    }
+  ]).then(stuff => {
+    res.json(stuff[0].totalCount);
+  });
+});
+
 // @route GET api/items
 // @desc Get ALL Item
 // @access Public
@@ -37,7 +54,6 @@ router.put("/updateViews", (req, res) => {
 // @desc POST ALL Item
 // @access Public
 router.post("/", (req, res) => {
-
   const newRoadmap = new Roadmap({
     roadmap: req.body.roadmap.roadmap,
     name: req.body.roadmap.name,
@@ -49,15 +65,12 @@ router.post("/", (req, res) => {
     author_bio_text: req.body.author_bio_text,
     roadmap_debrief: req.body.roadmap.roadmap_debrief
   });
-  
-  newRoadmap.save().then(roadmap => {
 
+  newRoadmap.save().then(roadmap => {
     User.findOneAndUpdate(
       { _id: req.body.author_id },
       { $push: { createdRoadmap: roadmap, savedRoadmap: roadmap } }
-    ).then(user => {
-
-    });
+    ).then(user => {});
     //find the user with req.body.user_id, then go to user's createdRoadmaps list and append roadmap_id
   });
 });

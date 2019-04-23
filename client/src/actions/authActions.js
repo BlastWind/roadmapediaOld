@@ -16,7 +16,6 @@ import {
 } from "./authActionTypes";
 // Register User
 export const registerUser = (userData, history) => dispatch => {
-
   axios
     .post("/api/users/register", userData)
     .then(res => history.push("/login")) // re-direct to login on successful register
@@ -32,7 +31,6 @@ export const loginUser = userData => dispatch => {
   axios
     .post("/api/users/login", userData)
     .then(res => {
-
       // Save to localStorage
       // Set token to localStorage
 
@@ -119,14 +117,12 @@ export const getSavedRoadmapByUser = id => dispatch => {
 
 export const profilePicUpdate = picture => dispatch => {
   return axios.put("/api/users/profilePicUpdate", picture).then(res => {
-
     dispatch({ type: PROFILE_PIC_UPDATE, payload: res.data });
   });
 };
 
 export const bioTextUpdate = stuff => dispatch => {
   return axios.put("/api/users/bioTextUpdate", stuff).then(res => {
-
     dispatch({ type: BIO_TEXT_UPDATE, payload: res.data });
   });
 };

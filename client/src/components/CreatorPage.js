@@ -3,8 +3,25 @@ import VertNavBar from "./VertNavBar.js";
 import { Grid, Image, Button, Icon } from "semantic-ui-react";
 import aboutme from "../images/aboutme.png";
 import "./CreatorPage.css";
+import axios from "axios";
 
 class CreatorPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { loading: true, count: "loading" };
+  }
+  componentDidMount() {
+    axios.get("api/users/getuserscount").then(res => {
+      this.setState({ count: res.data, loading: false });
+    });
+    axios.get("api/roadmaps/getroadmapcount").then(res => {
+      this.setState({ roadmapcount: res.data });
+    });
+    axios.get("api/roadmaps/getroadmapviewscount").then(res => {
+      this.setState({ totalroadmapviews: res.data });
+    });
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -15,6 +32,34 @@ class CreatorPage extends Component {
             id="DashboardPageTarget"
             class="DashboardLayout-main"
           >
+            <div class="DashboardPage has-adz">
+              <div class="DashboardPage-header">
+                <div>
+                  <div class="UIDiv RecommendationsHeader">
+                    <div
+                      class="DashboardHeader"
+                      role="contentinfo"
+                      tabindex="-1"
+                    >
+                      <div class="UIContainer">
+                        <div class="RecommendationsHeader-title">
+                          <h2 class="UIHeading UIHeading--two">
+                            <span>Site statistics</span>
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style={{ marginLeft: "3rem", marginTop: "3rem" }}>
+              <span>Total users: {this.state.count}</span>
+              <br />
+              <span>Total roadmaps: {this.state.roadmapcount}</span>
+              <br />
+              <span>Total roadmap views: {this.state.totalroadmapviews}</span>
+            </div>
             <div class="DashboardPage has-adz">
               <div class="DashboardPage-header">
                 <div>
@@ -63,10 +108,10 @@ class CreatorPage extends Component {
                         className="AndrewChenDescription"
                         style={{ paddingLeft: "1rem" }}
                       >
-                        I yelled, "FUCK!" after realizing my 50 hours of
-                        learning was very ineffective, then I made Roadmapedia
-                        because I don't want anyone's energy wasted on finding
-                        the best resources.
+                        I was sad after realizing my 50 hours of learning was
+                        very ineffective, then I made Roadmapedia because I
+                        don't want anyone's energy wasted on finding the best
+                        resources.
                       </span>
                       <br />
                       <span

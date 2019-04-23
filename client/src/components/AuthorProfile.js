@@ -29,7 +29,6 @@ class AuthorProfile extends Component {
       loading: false,
       bio: this.props.auth.author_bio
     });
-
   }
 
   render() {
@@ -45,13 +44,12 @@ class AuthorProfile extends Component {
             </span>
             <div>
               <span className="searchResultDivBrowseText">
-
                 Browsing {this.state.displayData.displayRoadmaps.length}{" "}
                 roadmaps
               </span>
             </div>
             <ReactTooltip id="bio">
-              <a style={{color: "white"}}>
+              <a style={{ color: "white" }}>
                 {this.state.bio === ""
                   ? "hmm, our friend didn't have a bio"
                   : this.state.bio}
