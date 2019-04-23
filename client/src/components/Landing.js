@@ -29,7 +29,7 @@ class Landing extends Component {
                 <div class="HomepageSplash-contentWrapper">
                   <div class="HomepageSplash-content">
                     <h1 class="UIHeading UIHeading--one">
-                      So much resources. Where to start?
+                      So many resources. Where to start?
                     </h1>
                     <p class="UIParagraph">
                       It's all good, the community got you. Browse roadmaps

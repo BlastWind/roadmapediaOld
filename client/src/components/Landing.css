@@ -1264,9 +1264,7 @@ html.cursor .UILink .SetPreview-cardHeaderTitle:hover:visited {
   only screen and (max-width: 38.75em) and (min-device-pixel-ratio: 2),
   only screen and (max-width: 38.75em) and (min-resolution: 192dpi),
   only screen and (max-width: 38.75em) and (min-resolution: 2dppx) {
-  .HomepageSplash {
-    background-image: url(/a/i/homepage/splash-group-mobile@2x.QS9N.jpg);
-  }
+
 }
 
 .HomepageSplash.HomepageSplash--intl {
@@ -4337,7 +4335,7 @@ html.touch .UIButton--suggestion:focus:hover:not(:active) {
     font-weight: 700;
     font-size: 3.5rem;
     line-height: 1.142857142857143;
-    color: #455358 !important; 
+    color: #455358 !important;
 }
 
 @media screen and (max-width: 38.75em) {
