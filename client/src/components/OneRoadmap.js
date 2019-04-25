@@ -116,7 +116,6 @@ class OneRoadmap extends Component {
       roadmap: this.state.treeData,
       author_id: this.state.author_id,
       author: this.state.author,
-      author_id: this.state.author_id,
       category: this.state.author,
       date: this.state.date,
       name: this.state.name,
@@ -148,7 +147,7 @@ class OneRoadmap extends Component {
                     this.props.history.push(`/profile/${authorID}`);
                   }}
                 >
-                  Andrew Chen
+                  {this.state.author}
                 </a>
               </span>
               <span>

@@ -25,7 +25,10 @@ class CreatorPage extends Component {
   render() {
     return (
       <React.Fragment>
-        <div class="DashboardLayout-container">
+        <div
+          class="DashboardLayout-container"
+          style={{ backgroundColor: "white" }}
+        >
           <VertNavBar />
           <section
             role="contentinfo"
@@ -53,7 +56,13 @@ class CreatorPage extends Component {
                 </div>
               </div>
             </div>
-            <div style={{ marginLeft: "3rem", marginTop: "3rem" }}>
+            <div
+              style={{
+                marginLeft: "3rem",
+                marginTop: "3rem",
+                backgroundColor: "white"
+              }}
+            >
               <span>Total users: {this.state.count}</span>
               <br />
               <span>Total roadmaps: {this.state.roadmapcount}</span>
