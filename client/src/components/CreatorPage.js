@@ -142,11 +142,6 @@ class CreatorPage extends Component {
                         marginBottom: "3rem"
                       }}
                     >
-                      <img
-                        src={aboutme}
-                        style={{ width: "100%", height: "auto" }}
-                      />
-
                       <Button
                         color="youtube"
                         fluid
@@ -198,14 +193,6 @@ class CreatorPage extends Component {
                 }}
               >
                 <span style={{ paddingLeft: "1rem" }} />
-                For password issues: Sorry, I still haven't coded the password
-                reset feature (Coming before April Fools for sure). When you
-                make your account your password is automatically hashed with JWT
-                token and even I who has the access to the database don't know
-                your password. You can however email me at
-                andrew.chen@roadmapedia.com with the email you used to register.
-                I can make a new account with all of the information you had in
-                your previous account.
               </div>
             </div>
             <div>
@@ -311,10 +298,7 @@ class CreatorPage extends Component {
                     CC 3.0 BY
                   </a>
                 </div>
-                <div>
-                  <span style={{ paddingLeft: "1rem" }} />
-                  Huge credits to Quizlet, I used a lot of their layout!
-                </div>
+                <div></div>
               </div>
             </div>
           </section>
